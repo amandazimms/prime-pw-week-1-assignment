@@ -1,11 +1,98 @@
 /* Give your page a fun background color */
+body {
+  margin: 0;
+  font-family:'Brush Script MT', cursive;
+  background-color: #E2DCE6;
+}
 
 /* Make the header and footer a different color from the background */
+header {
+  background-color: #5F844F;
+  height: 100px;
+  margin: 0 0 10px 0;
+}
+footer {
+  background-color: #20321A;
+  --contentWidth: 750px;
+  padding: 2rem 1rem;
+}
+
+.footer-text {
+  max-width: var(--contentWidth);
+  margin: 0 auto;
+}
+
 
 /* Align the h1 containing your name in the center of the header*/
+h1 {
+  text-align: center;
+  font-size: 48px;
+  margin: 0;
+  line-height: 100px;
+}
 
 /* Make your p tag a different color and italic */
+p {
+  color: #939f8f;
+    /*this font looks kinda italic already 
+    so I decided not to use: 
+  font-style: italic;
+    hope that's ok, I instead used normal */
+  font-style: normal;
+  font-size: 28px;
+}
+
+
+
+main {
+  width: 900px;
+  margin: 20px auto;
+
+}
+
+.images { /* container for image and the two buttons on either side */
+  display: grid; /* makes the buttons and image appear next to each other */
+
+   /* respective widths for each column. auto are the empty ones made for centering */
+  grid-template-columns: auto 30px 500px 30px auto;
+
+  /*todo : I don't really understand this next line, I borrowed it from google */
+  grid-template-rows: min-content; 
+
+  gap: 0px 15px; /*space between each row (0), then column (15) */
+  grid-template-areas: /* between each dot represents a box within the grid */
+    ". . . . ."; 
+  width: 100%; 
+  height: 100%; 
+}
 
 /* Put a border around your image */
+img {
+  border: 5px solid #5F844F;
+  border-radius: 15px;
+  width: 480px;
+  display: block;
+  margin: auto;
+ }
+
+ button {
+   background-color: #5F844F;
+   border: none;
+   border-radius: 15px;
+   height: 40px;
+   width: 40px;
+   font-size: 24px;
+   font-weight: bolder;
+ }
+
+ ul {
+  padding-left: 0px;
+ }
 
 /* Change the font-family of your list */
+li {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+  list-style-type: none;
+  text-align: center;
+ }

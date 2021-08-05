@@ -11,15 +11,54 @@
 </head>
 <body>
     <!-- Create a header element.  -->
+    <header>
+        <!-- Inside the header, add an <h1> element containing your name -->
+        <h1>Amanda Zimmerman</h1>
+    </header>
+    
+    <main>
+        <div class="images">
+            <div class="empty-hackey-div"></div>
+            <!-- todo : I don't understand CSS grid that well but the previous
+                empty div 'works' for centering the image+buttons stuff for now.
+                Hopefully will learn better solutions in the future'-->
 
-    <!-- Inside the header, add an <h1> element containing your name -->
+            <div class="buttons">
+                <button onclick="prevImage()">&lt</button>
+            </div>
+            <!-- Include an image -->
+            <div class="image">
+                <img class="imageToSwitch" src="zinnia.png" alt="Zinnia with sleeping bumblebee">
+            </div>
 
-    <!-- Include an image -->
+            <div class="buttons">
+                <button onclick="nextImage()">&gt</button>
+            </div>
 
-    <!-- Create an unordered list with 3 list items of fun facts about you -->
+            <div class="empty-hackey-div"></div> <!-- todo : see above matching-->
+        </div>
 
+        
+        <!-- Create an unordered list with 3 list items of fun facts about you -->
+        <ul>
+            <li>I'm a decent gardener</li>
+            <li>I can ride a unicycle</li>
+            <li>I love Miles Davis</li>
+        </ul>
+    </main>
     <!-- Create a footer element. -->
+    <footer>
+        <div class="footer-text">
+        <!-- Inside your footer, put a <p> element with your favorite quote -->
+            <p>"We are made of star stuff.
+                We are the mechanism by which the universe can comprehend itself. 
+                The world is so exquisite with so much love and moral depth. 
+                We should remain grateful every day for the brief but magnificent 
+                opportunity that life provides. The sum of all our evolution, our 
+                thinking and our accomplishments is love" -Carl Sagan </p>
+        </div>
+    </footer>
 
-    <!-- Inside your footer, put a <p> element with your favorite quote -->
+    <script src="helloWorld.js"></script>
 </body>
 </html>
